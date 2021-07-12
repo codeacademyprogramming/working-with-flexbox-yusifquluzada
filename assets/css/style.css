@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flexbox-container {
+    height: 400px;
+    display: flex;
+    /*  
+        when flex-direction is row justify-content aligns flex items on x axis
+        when flex-direction is column justify-content aligns flex items on y axis 
+    */
+    /* justify-content: center; */
+    /*  
+        when flex-direction is row align-items aligns flex items on y axis 
+        when flex-direction is column aling-items aligns flex items on x axis 
+    */
+    /* align-items: center; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap-reverse; */
+}
+
+.box {
+    font-size: 50px;
+    background-color: red;
+    border: 2px solid black;
+    width: 350px;
+    flex-shrink: 1;
+}
+
+.box-specific {
+    flex-shrink: 2;
+}
+
+.flexbox-item {
+}
+
+.flexbox-container-flex-grow {
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 100vh;
+    /* align-content: center; */
+    /* align-items: center; */
+}
+
+.flexbox-flex-grow-item {
+    font-size: 50px;
+    /* flex-grow: 1; */
+    width: 300px;
+    background-color: green;
+    border: 2px solid yellow;
+    /* align-self: center; */
+}
+
+/* .custom-grow {
+    flex-grow: 2;
+} */
+
+/* .custom-align {
+    align-self: flex-start;
+} */
